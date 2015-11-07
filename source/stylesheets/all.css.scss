@@ -22,9 +22,7 @@ $fa-enable-utilities: true !default;
 '3-styles/type';
 
 @import
-'4-layouts/post',
-'4-layouts/about',
-'4-layouts/contact';
+'4-layouts/post';
 
 @import
 '5-partials/nav',

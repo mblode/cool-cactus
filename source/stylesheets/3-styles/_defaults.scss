@@ -1,8 +1,18 @@
 .container {
   @include outer-container;
-  @include pad(1em);
+  padding: 10px;
+}
+
+html {
+  background: $white;
 }
 
 body {
   background: $gray;
+  margin: 1em;
+  margin-top: 55px;
+
+  @include media(600px) {
+    margin: 55px;
+  }
 }

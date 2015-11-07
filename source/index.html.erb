@@ -4,15 +4,12 @@ pageable: true
 blog: work
 ---
 
-<%= partial "partials/header" %>
-
 <div class="work__container">
   <% blog.articles.each do |article| %>
     <div class="work">
       <% link_to article do %>
         <img alt="<%= article.data.title %>" class="work__img" src="<%= article.data.img %>">
-        <h3 class="work__category"><%= article.data.category %></h3>
-        <h2 class="work__title"><%= article.data.title %></h2>
+        <p class="work__title"><%= article.data.title %></p>
       <% end %>
     </div>
   <% end %>

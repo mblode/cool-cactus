@@ -42,11 +42,6 @@ set :images_dir, 'images'
 
 set :fonts_dir,  "source/fonts"
 
-helpers do
-  def nav_active(path)
-    current_page.path == path ? {:class => "active"} : {}
-  end
-end
 
 configure :build do
   activate :minify_css

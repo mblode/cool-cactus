@@ -1,5 +1,6 @@
 .hero {
-  height: 200px;
+  background: $primary;
+  height: 300px;
   @include span-columns(12);
 
   @include media(600px) {
@@ -16,20 +17,30 @@
 }
 
 .hero__title {
-  font-size: 42px;
-  font-weight: 300;
+  color: $white;
+  font-size: 28px;
+  font-weight: 700;
   line-height: 46px;
   margin-bottom: 10px;
 }
 
 .hero__sub {
-  font-size: 24px;
+  color: $medium-gray;
+  font-size: 16px;
 }
 
-.hero__underline {
-  background: $pink;
-  height: 2px;
-  margin: 0 auto;
-  margin-top: 16px;
-  width: 100px;
+.hero__large-title {
+  color: $primary;
+  font-size: 48px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  line-height: 0;
+  padding: 1em;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+
+  @include media(600px) {
+    letter-spacing: 10px;
+  }
 }
