@@ -1,0 +1,89 @@
+$footer-height: 60px;
+
+.footer {
+  @include span-columns(12);
+  text-align: center;
+}
+
+.footer__hr {
+  @include span-columns(12);
+  
+}
+
+.footer__social {
+  @include span-columns(4);
+  @include omega(4n);
+
+  @include media($medium-screen-up) {
+    @include span-columns(2);
+    @include omega-reset(3n);
+  }
+}
+
+.footer__icon {
+  @include span-columns(12);
+  height: $footer-height;
+  line-height: $footer-height;
+  opacity: 1;
+  transition: $transition;
+  vertical-align: middle;
+}
+
+.footer__copy {
+  @include span-columns(12);
+  height: $footer-height;
+
+  @include media($medium-screen-up) {
+    @include span-columns(6);
+  }
+}
+
+.footer__text {
+  color: $medium-gray;
+  font-size: 14px;
+  line-height: $footer-height;
+}
+
+.fa {
+  transition: $transition;
+  vertical-align: middle;
+}
+
+.instagram {
+  &:hover {
+    background-color: $instagram;
+    .fa {
+      color: $white;
+    }
+  }
+
+  .fa {
+    color: $instagram;
+  }
+}
+
+.facebook {
+  &:hover {
+    background-color: $facebook;
+    .fa {
+      color: $white;
+    }
+  }
+
+  .fa {
+    color: $facebook;
+  }
+}
+
+.mail {
+  &:hover {
+    background-color: $mail;
+    .fa {
+      color: $white;
+    }
+  }
+
+  .fa {
+    color: $mail;
+  }
+}

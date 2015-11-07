@@ -1,0 +1,33 @@
+@charset 'utf-8';
+
+$fa-css-prefix:       fa !default;
+$fa-border-color:     #eee !default;
+$fa-inverse:          #fff !default;
+$fa-li-width:         (30em / 14) !default;
+
+$fa-enable-utilities: true !default;
+
+@import 'font-awesome';
+
+@import '1-vendor/normalize';
+
+@import 'bourbon';
+@import '2-base/base';
+@import 'neat';
+
+@import
+'3-styles/mixins',
+'3-styles/vars',
+'3-styles/defaults',
+'3-styles/type';
+
+@import
+'4-layouts/post',
+'4-layouts/about',
+'4-layouts/contact';
+
+@import
+'5-partials/nav',
+'5-partials/header',
+'5-partials/work',
+'5-partials/footer';

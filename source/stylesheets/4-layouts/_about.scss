@@ -1,0 +1,35 @@
+.about__container {
+  @include outer-container;
+}
+
+.about__title {
+  @include span-columns(12);
+}
+
+.about__info {
+  @include span-columns(12);
+
+  @include media($medium-screen-up) {
+    @include span-columns(7);
+  }
+
+  @include media($large-screen-up) {
+    @include span-columns(8);
+  }
+}
+
+.about__img {
+  @include span-columns(12);
+
+  @include media($medium-screen-up) {
+    @include span-columns(5);
+  }
+
+  @include media($large-screen-up) {
+    @include span-columns(4);
+  }
+
+  img {
+    @include fill-parent;
+  }
+}

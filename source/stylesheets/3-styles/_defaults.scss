@@ -1,0 +1,8 @@
+.container {
+  @include outer-container;
+  @include pad(1em);
+}
+
+body {
+  background: $gray;
+}

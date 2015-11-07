@@ -1,0 +1,35 @@
+.hero {
+  height: 200px;
+  @include span-columns(12);
+
+  @include media(600px) {
+    height: 300px;
+  }
+}
+
+.hero__text {
+  line-height: 28px;
+  position: relative;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.hero__title {
+  font-size: 42px;
+  font-weight: 300;
+  line-height: 46px;
+  margin-bottom: 10px;
+}
+
+.hero__sub {
+  font-size: 24px;
+}
+
+.hero__underline {
+  background: $pink;
+  height: 2px;
+  margin: 0 auto;
+  margin-top: 16px;
+  width: 100px;
+}
