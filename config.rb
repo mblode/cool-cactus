@@ -1,6 +1,6 @@
 activate :blog do |blog|
-  blog.name = "work"
-  blog.prefix = "work"
+  blog.name = "project"
+  blog.prefix = "project"
 
   blog.taglink = "categories/{tag}.html"
   blog.permalink = "{title}.html"
@@ -9,10 +9,6 @@ activate :blog do |blog|
   blog.summary_length = 250
   blog.default_extension = ".md"
 
-  blog.tag_template = "tag.html"
-  blog.calendar_template = "calendar.html"
-
-  # Enable pagination
   blog.paginate = true
   blog.per_page = 10
   blog.page_link = "page/{num}"
@@ -24,38 +20,29 @@ activate :autoprefixer do |config|
   config.browsers = ['last 2 versions']
 end
 
+page '/feed.xml', layout: false
+page '/robots.txt', layout: false
+
 activate :automatic_image_sizes
-
 activate :livereload
-
-set :relative_links, true
-
+activate :syntax
 activate :directory_indexes
 
 sprockets.append_path File.join root, 'source/javascripts'
 
+set :relative_links, true
 set :css_dir, 'stylesheets'
-
 set :js_dir, 'javascripts'
-
 set :images_dir, 'images'
-
 set :fonts_dir,  "source/fonts"
-
 
 configure :build do
   activate :minify_css
-
   activate :minify_javascript
-
   activate :asset_hash
-
   activate :relative_assets
-
   activate :imageoptim
-
   activate :minify_html
-
   activate :gzip
 end
 

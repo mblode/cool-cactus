@@ -1,6 +1,8 @@
+.project__container {
+  margin-top: 5em;
+}
 
-
-.work {
+.project {
   @include span-columns(12);
   background: $white;
   box-shadow: 0 1px 2px rgba(0, 0, 0, .12);
@@ -14,7 +16,7 @@
   }
 }
 
-.work__img {
+.project__img {
   @include fill-parent;
   opacity: 1;
   transition: $transition;
@@ -24,7 +26,7 @@
   }
 }
 
-.work__title {
+.project__title {
   margin: 0;
   padding: 0;
 }

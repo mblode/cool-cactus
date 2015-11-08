@@ -6,6 +6,9 @@
 
   <div class="container">
     <div class="row">
+      <h1 class="post__title"><%= current_page.data.title  %></h1>
+      <p class="post__date">Posted on <%= current_page.data.date  %></p>
+      <hr>
       <%= yield %>
     </div>
   </div>

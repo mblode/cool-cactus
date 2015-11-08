@@ -1,15 +1,14 @@
 ---
 title: Home
-pageable: true
-blog: work
+blog: project
 ---
 
-<div class="work__container">
+<div class="project__container">
   <% blog.articles.each do |article| %>
-    <div class="work">
+    <div class="project">
       <% link_to article do %>
-        <img alt="<%= article.data.title %>" class="work__img" src="<%= article.data.img %>">
-        <p class="work__title"><%= article.data.title %></p>
+        <img alt="<%= article.data.title %>" class="project__img" src="<%= article.data.img %>">
+        <p class="project__title"><%= article.data.title %></p>
       <% end %>
     </div>
   <% end %>

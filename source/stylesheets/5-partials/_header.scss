@@ -1,11 +1,12 @@
 .hero {
   background: $primary;
   height: 300px;
-  @include span-columns(12);
 
   @include media(600px) {
     height: 300px;
   }
+
+  @include span-columns(12);
 }
 
 .hero__text {
@@ -21,26 +22,22 @@
   font-size: 28px;
   font-weight: 700;
   line-height: 46px;
+  margin: 0;
   margin-bottom: 10px;
 }
 
 .hero__sub {
-  color: $medium-gray;
+  color: $dark-gray;
   font-size: 16px;
+  margin: 0;
 }
 
 .hero__large-title {
   color: $primary;
   font-size: 48px;
   font-weight: bold;
-  letter-spacing: 2px;
   line-height: 0;
-  padding: 1em;
-  position: relative;
   text-align: center;
   text-transform: uppercase;
-
-  @include media(600px) {
-    letter-spacing: 10px;
-  }
+  top: 5px;
 }
