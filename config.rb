@@ -20,12 +20,10 @@ activate :autoprefixer do |config|
   config.browsers = ['last 2 versions']
 end
 
-page '/feed.xml', layout: false
 page '/robots.txt', layout: false
 
 activate :automatic_image_sizes
 activate :livereload
-activate :syntax
 activate :directory_indexes
 
 sprockets.append_path File.join root, 'source/javascripts'
