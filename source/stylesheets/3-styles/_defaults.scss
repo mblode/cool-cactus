@@ -1,6 +1,6 @@
 .container {
   @include outer-container;
-  padding: 10px;
+  padding: 1em;
 }
 
 html {
@@ -12,7 +12,7 @@ body {
   margin: 1em;
   margin-top: 55px;
 
-  @include media(600px) {
+  @include media($small-screen-up) {
     margin: 55px;
   }
 }

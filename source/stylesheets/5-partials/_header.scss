@@ -2,7 +2,7 @@
   background: $primary;
   height: 300px;
 
-  @include media(600px) {
+  @include media($small-screen-up) {
     height: 300px;
   }
 
@@ -29,7 +29,24 @@
 .hero__sub {
   color: $dark-gray;
   font-size: 16px;
-  margin: 0;
+}
+
+.hero__icon {
+  padding-left: 10px;
+  padding-right: 10px;
+
+  i {
+    color: $dark-gray;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    i {
+      color: $white;
+      transform: scale(1.5);
+    }
+  }
 }
 
 .hero__large-title {
