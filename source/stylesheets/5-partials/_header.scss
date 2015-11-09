@@ -32,20 +32,20 @@
 }
 
 .hero__icon {
-  margin-left: 10px;
-  margin-right: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
 
   i {
     color: $dark-gray;
   }
 
-  i:hover,
-  i:focus {
-    color: $medium-gray;
-  }
-
-  i:active {
-    color: $dark-gray;
+  &:hover,
+  &:focus,
+  &:active {
+    i {
+      color: $white;
+      transform: scale(1.5);
+    }
   }
 }
 

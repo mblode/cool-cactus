@@ -1,7 +1,7 @@
 ---
 title: 001 - a project a week
 date: November 7th, 2015
-img: "http://placehold.it/640x480"
+img: "home.jpg"
 ---
 
 # Heading 1

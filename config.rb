@@ -23,7 +23,7 @@ end
 page '/robots.txt', layout: false
 
 activate :automatic_image_sizes
-activate :livereload
+activate :livereloadbower
 activate :directory_indexes
 
 sprockets.append_path File.join root, 'source/javascripts'
