@@ -1,23 +1,24 @@
 xml.instruct!
-2  xml.feed "xmlns" => "http://www.w3.org/2005/Atom" do
-3    xml.title "a project a week"
-4    xml.subtitle "Weekly Web Projects"
-5    xml.id "http://matthewblode.com/a-project-a-week/"
-6    xml.link "href" => "http://matthewblode.com/a-project-a-week/"
-7    xml.link "href" => "http://blog.url.com/feed.xml", "rel" => "self"
-8    xml.updated blog.articles.first.date.to_time.iso8601
-9    xml.author { xml.name "Matthew Blode" }
-10
-11   blog.articles[0..10].each do |article|
-12     xml.entry do
-13       xml.title article.title
-14       xml.link "rel" => "alternate", "href" => article.url
-15       xml.id article.url
-16       xml.published article.date.to_time.iso8601
-17       xml.updated article.date.to_time.iso8601
-18       xml.author { xml.name "Matthew Blode" }
-19       xml.summary article.summary, "type" => "html"
-20       xml.content article.body, "type" => "html"
-21     end
-22   end
-23 end
+xml.feed "xmlns" => "http://www.w3.org/2005/Atom" do
+  site_url = "http://matthewblode.com/a-project-a-week/"
+  xml.title "a project a week"
+  xml.subtitle "Weekly Web Projects"
+  xml.id URI.join(site_url, blog.options.prefix.to_s)
+  xml.link "href" => URI.join(site_url, blog.options.prefix.to_s)
+  xml.link "href" => URI.join(site_url, current_page.path), "rel" => "self"
+  xml.updated(blog.articles.first.date.to_time.iso8601) unless blog.articles.empty?
+  xml.author { xml.name "Matthew Blode" }
+
+  blog.articles[0..5].each do |article|
+    xml.entry do
+      xml.title article.title
+      xml.link "rel" => "alternate", "href" => URI.join(site_url, article.url)
+      xml.id URI.join(site_url, article.url)
+      xml.published article.date.to_time.iso8601
+      xml.updated File.mtime(article.source_file).iso8601
+      xml.author { xml.name "Matthew Blode" }
+      # xml.summary article.summary, "type" => "html"
+      xml.content article.body, "type" => "html"
+    end
+  end
+end
