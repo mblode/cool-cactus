@@ -16,7 +16,7 @@ var options = {
 			pixelStep : 10,
       autoInsertCSSBestPractices: true
 	};
-  
+
 	imgix.onready(function() {
 		imgix.fluid(options);
 	});
