@@ -13,7 +13,7 @@ var options = {
 			updateOnPinchZoom : true,
 			fitImgTagToContainerWidth: true,
 			fitImgTagToContainerHeight: true,
-			pixelStep : 10,
+			pixelStep : 5,
       autoInsertCSSBestPractices: true
 	};
 

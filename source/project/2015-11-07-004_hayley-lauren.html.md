@@ -1,7 +1,7 @@
 ---
-title: 002 - Web Project
-date: November 1st, 2015
-img: "home-2.png"
+title: 004 - Hayley Lauren Design
+date: November 7th, 2015
+img: "003.png"
 ---
 
 # Heading 1
