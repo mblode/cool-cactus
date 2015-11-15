@@ -32,7 +32,6 @@ set :relative_links, true
 set :css_dir, 'stylesheets'
 set :js_dir, 'javascripts'
 set :images_dir, 'images'
-set :fonts_dir,  "source/fonts"
 
 configure :build do
   activate :minify_css

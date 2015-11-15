@@ -11,7 +11,6 @@ gem 'middleman-autoprefixer'
 gem 'middleman-minify-html'
 gem 'middleman-imageoptim'
 
-gem 'font-awesome-middleman'
 gem 'jquery-middleman'
 
 gem 'bitters'

@@ -1,6 +1,6 @@
 ---
 title: 003 - Hayley Lauren Design
-date: November 7th, 2015
+date: October 7th, 2015
 img: "5.png"
 ---
 
