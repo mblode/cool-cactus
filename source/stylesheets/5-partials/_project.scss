@@ -26,15 +26,13 @@
 }
 
 .project__img {
-
   @include fill-parent;
-  height: 200px;
   opacity: 1;
   transition: $transition;
-
-  @include media($small-screen-up) {
-    height: 300px;
-  }
+  // 
+  // @include media($small-screen-up) {
+  //   height: 300px;
+  // }
 
   &:hover {
     opacity: .6;
