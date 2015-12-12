@@ -1,20 +1,9 @@
 .container {
   @include outer-container;
-  padding: 1em;
 }
 
 html {
   background: $white;
-}
-
-body {
-  background: $background;
-  margin: 1em;
-  margin-top: 55px;
-
-  @include media($small-screen-up) {
-    margin: 55px;
-  }
 }
 
 .text-centre {
