@@ -1,19 +1,3 @@
-activate :blog do |blog|
-  blog.name = "project"
-  blog.prefix = "project"
-
-  blog.taglink = "categories/{tag}.html"
-  blog.permalink = "{title}.html"
-  blog.layout = "post"
-  blog.summary_separator = /(READMORE)/
-  blog.summary_length = 250
-  blog.default_extension = ".md"
-
-  blog.paginate = true
-  blog.per_page = 10
-  blog.page_link = "page/{num}"
-end
-
 Time.zone = "Melbourne"
 
 activate :autoprefixer do |config|

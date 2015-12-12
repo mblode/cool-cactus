@@ -1,17 +1,5 @@
 ---
 title: Home
-blog: project
 ---
 
-<div class="project__container">
-  <% blog.articles.each do |article| %>
-    <div class="project">
-      <% link_to article do %>
-        <div class="project__img">
-        	<img class="img-fluid" src="https://s3-us-west-2.amazonaws.com/mblode.imgix/<%= article.data.img %>">
-        </div>
-        <p class="project__title"><%= article.data.title %></p>
-      <% end %>
-    </div>
-  <% end %>
-</div>
+<h1>Cool Cactus</h1>
