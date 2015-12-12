@@ -26,9 +26,3 @@ configure :build do
   activate :minify_html
   activate :gzip
 end
-
-activate :deploy do |deploy|
-  deploy.method = :git
-  deploy.branch = 'gh-pages'
-  deploy.build_before = true
-end
