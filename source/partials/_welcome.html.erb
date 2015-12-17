@@ -1,0 +1,15 @@
+<div class="welcome">
+
+  <div class="welcome--text welcome--top">
+    <h1>WELCOME TO COOL CACTUS</h1>
+    <p>
+      CLICK THE CACTUS TO ENTER
+    </p>
+  </div>
+
+</div>
+
+
+<% link_to 'home.html', :class => "welcome--center" do %>
+  <%= image_tag "https://s3-us-west-2.amazonaws.com/mblode.imgix/CC-mascot.png", { :class => 'welcome--mascot' } %>
+<% end %>

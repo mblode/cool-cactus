@@ -1,0 +1,29 @@
+.hero--background {
+  background: $primary;
+}
+
+.hero {
+  height: 300px;
+}
+
+.hero--title {
+  color: $white;
+  font-weight: 900;
+
+  @include breakpoint(medium) {
+    font-size: 48px;
+  }
+}
+
+.hero--tag {
+  color: $white;
+  font-size: 16px;
+
+  @include breakpoint(medium only) {
+    font-size: 20px;
+  }
+
+  @include breakpoint(large) {
+    font-size: 24px;
+  }
+}
