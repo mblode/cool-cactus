@@ -11,6 +11,7 @@ activate :livereload
 activate :directory_indexes
 
 sprockets.append_path File.join root, 'source/javascripts'
+sprockets.append_path File.join root, 'bower_components'
 
 set :relative_links, true
 set :css_dir, 'stylesheets'

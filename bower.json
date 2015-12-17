@@ -1,0 +1,22 @@
+{
+  "name": "cool-cactus",
+  "homepage": "https://github.com/mblode/cool-cactus",
+  "authors": [
+    "mblode <m.blode@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "foundation-sites": "~6.0.6",
+    "motion-ui": "~1.1.1"
+  }
+}

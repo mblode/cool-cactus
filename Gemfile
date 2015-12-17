@@ -10,12 +10,6 @@ gem 'middleman-autoprefixer'
 gem 'middleman-minify-html'
 gem 'middleman-imageoptim'
 
-gem 'jquery-middleman'
-
-gem 'bitters'
-gem 'bourbon'
-gem 'neat'
-
 gem 'therubyracer'
 gem 'oj'
 

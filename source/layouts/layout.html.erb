@@ -2,12 +2,10 @@
 </head>
 <body>
 
-  <div class="container">
-    <%= yield %>
-  </div>
+<%= yield %>
 
-
-  <%= javascript_include_tag "all" %>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyABbh2m2de9RH5iNGIGmDTHlOr4o4aNNF0&callback=initMap"></script>
+<%= javascript_include_tag "all" %>
 
 </body>
 </html>

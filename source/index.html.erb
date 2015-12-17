@@ -2,4 +2,19 @@
 title: Home
 ---
 
-<h1>Cool Cactus</h1>
+<style>
+  body {
+    background: url("https://s3-us-west-2.amazonaws.com/mblode.imgix/CC-background.jpg") no-repeat center center fixed;
+    background-size: cover;
+  }
+</style>
+
+<div class="row">
+  <h1 class="text-center">WELCOME TO COOL CACTUS</h1>
+
+  <% link_to 'home.html', :class => "work" do %>
+    <%= image_tag "https://s3-us-west-2.amazonaws.com/mblode.imgix/CC-mascot.png", { :class => 'index--mascot' } %>
+  <% end %>
+
+  <h2 class="text-center">CLICK CACTUS TO ENTER</h2>
+</div>
