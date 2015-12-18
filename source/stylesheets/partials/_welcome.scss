@@ -24,6 +24,7 @@
 
 @keyframes large {
   from {
+    left: 150px;
     transform: rotate(0deg);
   }
 
@@ -40,6 +41,7 @@
   }
 
   to {
+    left: calc(100% - 350px);
     transform: rotate(0deg);
   }
 }
@@ -73,4 +75,29 @@
   text-align: center;
   top: 50px;
   width: 100%;
+}
+
+.welcome--welcome {
+  color: $white;
+  font-weight: normal;
+  margin-bottom: 0;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, .16), 0 3px 6px rgba(0, 0, 0, .12);
+
+  @include breakpoint(medium) {
+    font-size: 36px;
+  }
+}
+
+.welcome--title {
+  color: $white;
+  font-weight: 900;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, .16), 0 3px 6px rgba(0, 0, 0, .12);
+
+  @include breakpoint(medium) {
+    font-size: 48px;
+  }
+}
+
+.welcome--info {
+
 }
