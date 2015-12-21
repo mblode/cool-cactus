@@ -1,10 +1,12 @@
 <%= partial "partials/head" %>
 </head>
-<body>
+<body class="tk-proxima-nova-soft">
 
 <%= yield %>
 
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyABbh2m2de9RH5iNGIGmDTHlOr4o4aNNF0&callback=initMap"></script>
+<script src="https://use.typekit.net/peu7ooh.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
+
 <%= javascript_include_tag "all" %>
 
 </body>
