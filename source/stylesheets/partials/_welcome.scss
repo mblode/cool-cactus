@@ -22,7 +22,7 @@
   }
 }
 
-@keyframes large {
+@keyframes medium {
   from {
     left: 150px;
     transform: rotate(0deg);
@@ -46,6 +46,31 @@
   }
 }
 
+
+@keyframes large {
+  from {
+    left: 600px;
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(-7deg);
+  }
+
+  50% {
+    transform: rotate(7deg);
+  }
+
+  75% {
+    transform: rotate(-7deg);
+  }
+
+  to {
+    left: calc(100% - 800px);
+    transform: rotate(0deg);
+  }
+}
+
 .welcome--mascot {
   animation-direction: alternate;
   animation-duration: 3.5s;
@@ -60,6 +85,13 @@
 
   @include breakpoint(medium) {
     animation-duration: 5s;
+    animation-name: medium;
+    top: calc(50% - 200px);
+    width: 200px;
+  }
+
+  @include breakpoint(large) {
+    animation-duration: 7s;
     animation-name: large;
     top: calc(50% - 200px);
     width: 200px;

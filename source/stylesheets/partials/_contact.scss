@@ -1,10 +1,41 @@
 .contact--mail,
 .contact--instagram {
+  display: inline-block;
+  height: 98px;
+  line-height: 98px;
+  opacity: 1;
+  position: relative;
+  text-align: center;
   transition: .3s;
+  vertical-align: middle;
+  width: 100%;
 
+  .fa {
+    color: $primary;
+    transition: .3s;
+    vertical-align: middle;
+  }
+}
+
+.contact--mail {
   &:hover {
-    i {
-      color: $primary;
+    .fa {
+      color: #ea4c89;
     }
   }
+}
+
+.contact--instagram {
+  &:hover {
+    .fa {
+      color: #3f729b;
+    }
+  }
+}
+
+.contact--text {
+  color: $primary;
+  font-weight: bold;
+  margin: 0;
+  text-align: center;
 }
