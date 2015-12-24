@@ -203,8 +203,8 @@
 $global-width: 940px;
 // $global-font-size: 100%;
 // $global-lineheight: 1.5;
-// $primary-color: #fff;
-// $secondary-color: #777;
+$primary-color: #007cc0;
+$secondary-color: #008b6a;
 // $success-color: #3adb76;
 // $warning-color: #ffae00;
 // $alert-color: #ec5840;
@@ -430,7 +430,7 @@ $header-sizes: (
   medium: (
     'h1': 36,
     'h2': 30,
-    'h3': 24,
+    'h3': 18,
     'h4': 14,
     'h5': 14,
     'h6': 12,
