@@ -20,3 +20,5 @@ gem "wdm", :platforms => [:mswin, :mingw]
 
 # Windows does not come with time zone data
 gem "tzinfo-data", platforms: [:mswin, :mingw, :jruby]
+
+gem 'middleman-deploy', '~> 1.0'

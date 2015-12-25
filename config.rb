@@ -27,3 +27,11 @@ configure :build do
   activate :minify_html
   activate :gzip
 end
+
+activate :deploy do |deploy|
+  deploy.deploy_method   = :ftp
+  deploy.host            = 'ftp.example.com'
+  deploy.path            = '/srv/www/site'
+  deploy.user            = 'tvaughan'
+  deploy.password        = 'secret'
+end
