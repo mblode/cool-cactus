@@ -3,7 +3,9 @@
 
   <div class="row hero">
     <div class="small-12 column align-middle">
-      <%= image_tag "https://s3-us-west-2.amazonaws.com/mblode.imgix/CC-mascot.png", { :alt => 'Cool Cactus Mascot', :class => 'hero--mascot' } %>
+      <% link_to 'index.html', :class => "welcome--center" do %>
+        <%= image_tag "https://s3-us-west-2.amazonaws.com/mblode.imgix/CC-mascot.png", {:alt => "Cool Cactus Mascot", :class => 'hero--mascot' } %>
+      <% end %>
       <h1 class="hero--title text-center">COOL CACTUS</h1>
       <h2 class="hero--tag text-center">INDOOR PLANTS &middot; POTS &middot; COOL THINGS</h2>
     </div>
