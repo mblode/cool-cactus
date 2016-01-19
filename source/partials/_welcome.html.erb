@@ -1,15 +1,17 @@
-<div class="welcome">
-
-  <div class="welcome--text welcome--top">
+<div class="row">
+  <div class="columns small-12 text-center">
+    <div class="medium-gutter"></div>
+    
     <h2 class="welcome--welcome">Welcome to</h2>
     <h1 class="welcome--title">COOL CACTUS</h1>
     <p class="welcome--info">
       CLICK THE CACTUS MASCOT TO ENTER
     </p>
+
+    <div class="medium-gutter"></div>
+
+    <% link_to 'home.html', :class => "welcome--center" do %>
+      <%= image_tag "https://s3-us-west-2.amazonaws.com/mblode.imgix/CC-mascot.png", {:alt => "Cool Cactus Mascot", :class => 'welcome--mascot' } %>
+    <% end %>
   </div>
-
 </div>
-
-<% link_to 'home.html', :class => "welcome--center" do %>
-  <%= image_tag "https://s3-us-west-2.amazonaws.com/mblode.imgix/CC-mascot.png", {:alt => "Cool Cactus Mascot", :class => 'welcome--mascot' } %>
-<% end %>

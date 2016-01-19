@@ -1,6 +1,6 @@
 $white: #fff;
-$primary: #2DB49E;
+$primary: #3EB489;
 $accent: #fdf2e0;
-$primary-text: rgba(0, 0, 0, .87);
+$primary-text: darken($primary, 20);
 $secondary-text: rgba(0, 0, 0, .54);
 $divider: rgba(0, 0, 0, .12);

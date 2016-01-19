@@ -1,6 +1,5 @@
 @keyframes small {
   from {
-    left: 20px;
     transform: rotate(0deg);
   }
 
@@ -17,56 +16,6 @@
   }
 
   to {
-    left: calc(100% - 160px);
-    transform: rotate(0deg);
-  }
-}
-
-@keyframes medium {
-  from {
-    left: 150px;
-    transform: rotate(0deg);
-  }
-
-  25% {
-    transform: rotate(-7deg);
-  }
-
-  50% {
-    transform: rotate(7deg);
-  }
-
-  75% {
-    transform: rotate(-7deg);
-  }
-
-  to {
-    left: calc(100% - 350px);
-    transform: rotate(0deg);
-  }
-}
-
-
-@keyframes large {
-  from {
-    left: 400px;
-    transform: rotate(0deg);
-  }
-
-  25% {
-    transform: rotate(-7deg);
-  }
-
-  50% {
-    transform: rotate(7deg);
-  }
-
-  75% {
-    transform: rotate(-7deg);
-  }
-
-  to {
-    left: calc(100% - 600px);
     transform: rotate(0deg);
   }
 }
@@ -77,43 +26,15 @@
   animation-iteration-count: infinite;
   animation-name: small;
   animation-timing-function: ease-in-out;
-  left: calc(50% - 100px);
-  position: absolute;
-  top: calc(50% - 100px);
-  transform-origin: center bottom 0;
-  width: 130px;
-
-  @include breakpoint(medium) {
-    animation-duration: 5s;
-    animation-name: medium;
-    top: calc(50% - 200px);
-    width: 200px;
-  }
-
-  @include breakpoint(large) {
-    animation-duration: 7s;
-    animation-name: large;
-    top: calc(50% - 200px);
-    width: 200px;
-  }
-}
-
-.welcome {
-  position: relative;
-}
-
-.welcome--top {
-  position: absolute;
-  text-align: center;
-  top: 50px;
-  width: 100%;
+  margin: auto;
+  width: 150px;
 }
 
 .welcome--welcome {
   color: $white;
   font-weight: normal;
   margin-bottom: 0;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, .16), 0 3px 6px rgba(0, 0, 0, .12);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, .16), 0 3px 6px rgba(0, 0, 0, .16);
 
   @include breakpoint(medium) {
     font-size: 36px;
@@ -123,7 +44,7 @@
 .welcome--title {
   color: $white;
   font-weight: 900;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, .16), 0 3px 6px rgba(0, 0, 0, .12);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, .16), 0 3px 6px rgba(0, 0, 0, .16);
 
   @include breakpoint(medium) {
     font-size: 48px;
