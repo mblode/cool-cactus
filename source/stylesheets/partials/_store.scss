@@ -4,12 +4,12 @@
 
 .store--table {
   width: 100%;
-  color: $primary-text;
+  color: $primary-dark;
 }
 
 .store--title__container {
-  border: 7px solid $primary-text;
-  box-shadow: 7px 7px 0 $primary-text;
+  border: 7px solid $primary-dark;
+  box-shadow: 7px 7px 0 $primary-dark;
   display: inline-block;
   margin-bottom: 1.5rem;
   margin-top: 1rem;
@@ -19,9 +19,9 @@
 .store--title {
   font-weight: bold;
   margin: 0;
-  color: $primary-text;
+  color: $primary-dark;
 }
 
 .store--sub {
-  color: $primary-text;
+  color: $primary-dark;
 }
