@@ -33,7 +33,7 @@ end
 activate :deploy do |deploy|
   deploy.method          = :ftp
   deploy.host            = 'ftp.coolcactus.com.au'
-  deploy.path            = '/websites/co/coolcactus.com.au'
+  deploy.path            = '/'
   deploy.user            = 'coco55753'
   deploy.password        = 'zUkRXpBv2'
 end
