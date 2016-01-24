@@ -9,7 +9,6 @@ require_relative "./lib/build_cleaner"
 page '/robots.txt', layout: false
 
 activate :automatic_image_sizes
-activate :livereload
 activate :directory_indexes
 
 sprockets.append_path File.join root, 'source/javascripts'
@@ -32,7 +31,7 @@ configure :build do
 end
 
 activate :deploy do |deploy|
-  deploy.deploy_method   = :ftp
+  deploy.method          = :ftp
   deploy.host            = 'ftp.coolcactus.com.au'
   deploy.path            = '/websites/co/coolcactus.com.au'
   deploy.user            = 'coco55753'
