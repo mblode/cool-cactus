@@ -179,10 +179,10 @@ PLATFORMS
 
 DEPENDENCIES
   builder
-  middleman
+  middleman (= 3.4.1)
   middleman-autoprefixer
   middleman-blog
-  middleman-deploy (~> 1.0)
+  middleman-deploy
   middleman-imageoptim
   middleman-livereload
   middleman-minify-html
