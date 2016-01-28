@@ -21,13 +21,15 @@
 }
 
 .hero--mascot {
-  height: 150px;
+  max-height: 150px;
   text-align: center;
+  width: auto;
 }
 
 .hero--logo {
-  height: 48px;
+  max-height: 48px;
   text-align: center;
+  width: auto;
 }
 
 .hero--tag {
