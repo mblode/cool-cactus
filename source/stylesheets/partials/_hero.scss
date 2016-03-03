@@ -15,12 +15,21 @@
   }
 }
 
-.hero--mascot {
-  display: block;
-  height: 150px;
-  margin: 0 auto;
+.hero--center {
   margin-bottom: 1.5rem;
   text-align: center;
+}
+
+.hero--mascot {
+  max-height: 150px;
+  text-align: center;
+  width: auto;
+}
+
+.hero--logo {
+  max-height: 48px;
+  text-align: center;
+  width: auto;
 }
 
 .hero--tag {

@@ -11,7 +11,7 @@
   width: 100%;
 
   .fa {
-    color: darken($primary, 10);
+    color: $primary-dark;
     transition: .3s;
     vertical-align: middle;
   }
@@ -34,7 +34,7 @@
 }
 
 .contact--text {
-  color: darken($primary, 10);
+  color: $primary-dark;
   font-weight: bold;
   margin: 0;
   text-align: center;

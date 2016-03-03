@@ -4,10 +4,11 @@ activate :autoprefixer do |config|
   config.browsers = ['last 2 versions']
 end
 
+require_relative "./lib/build_cleaner"
+
 page '/robots.txt', layout: false
 
 activate :automatic_image_sizes
-activate :livereload
 activate :directory_indexes
 
 sprockets.append_path File.join root, 'source/javascripts'
@@ -19,6 +20,7 @@ set :js_dir, 'javascripts'
 set :images_dir, 'images'
 
 configure :build do
+  activate :build_cleaner
   activate :minify_css
   activate :minify_javascript
   activate :asset_hash
@@ -29,9 +31,9 @@ configure :build do
 end
 
 activate :deploy do |deploy|
-  deploy.deploy_method   = :ftp
-  deploy.host            = 'ftp.example.com'
-  deploy.path            = '/srv/www/site'
-  deploy.user            = 'tvaughan'
-  deploy.password        = 'secret'
+  deploy.method          = :ftp
+  deploy.host            = 'ftp.coolcactus.com.au'
+  deploy.path            = '/'
+  deploy.user            = 'coco55753'
+  deploy.password        = 'zUkRXpBv2'
 end
