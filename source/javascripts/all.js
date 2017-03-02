@@ -1,5 +1,5 @@
-//= require jquery/dist/jquery
-//= require foundation-sites/dist/foundation
+//= link jquery/dist/jquery
+//= link foundation-sites/dist/foundation
 
 'use strict';
 
